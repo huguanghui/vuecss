@@ -1,0 +1,37 @@
+<template>
+  <div class="HolyGrail">
+    <header>header</header>
+    <div class="HolyGrail-body">
+      <main class="HolyGrail-content">content</main>
+      <nav class="HolyGrail-nav">nav</nav>
+      <aside class="HolyGrail-ads">aside</aside>
+    </div>
+    <footer>footer</footer>
+  </div>
+</template>
+
+<style>
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.header,
+.footer {
+  flex: 1;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+.HolyGrail-content {
+  flex: 1;
+}
+.HolyGrail-nav,
+.HolyGrail-ads {
+  flex: 0 0 12em;
+}
+.HolyGrail-nav {
+  order: -1;
+}
+</style>
